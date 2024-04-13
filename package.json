@@ -5,9 +5,9 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "create-local": "graph create --node http://192.168.10.10:8020/ blocks",
-    "deploy-local": "graph deploy --node http://127.0.0.1:8020/ --ipfs http://192.168.10.15:5001 blocks",
-    "remove-local": "graph remove --node http://127.0.0.1:8020/ blocks",
+    "create-local": "graph create --node http://192.168.10.10:8020/ 8BitsBlocks",
+    "deploy-local": "graph deploy --node http://127.0.0.1:8020/ --ipfs http://192.168.10.15:5001 8BitsBlocks",
+    "remove-local": "graph remove --node http://127.0.0.1:8020/ 8BitsBlocks",
     "prepare:socotra": "mustache config/juneo-socotra.json subgraph.template.yaml > subgraph.yaml && npm run codegen",
     "deploy:socotra": "npm run prepare:socotra && graph deploy TODO blocks"
   },
