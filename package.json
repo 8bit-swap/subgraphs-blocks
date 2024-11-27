@@ -9,7 +9,9 @@
     "deploy-local": "graph deploy --node http://127.0.0.1:8020/ --ipfs http://192.168.10.15:5001 8BitsBlocks",
     "remove-local": "graph remove --node http://127.0.0.1:8020/ 8BitsBlocks",
     "prepare:socotra": "mustache config/juneo-socotra.json subgraph.template.yaml > subgraph.yaml && npm run codegen",
-    "deploy:socotra": "npm run prepare:socotra && graph deploy TODO blocks"
+    "deploy:socotra": "npm run prepare:socotra && graph deploy Socotra8BitSwapBlocks",
+    "prepare:june": "mustache config/juneo-june.json subgraph.template.yaml > subgraph.yaml && npm run codegen",
+    "deploy:june": "npm run prepare:june && graph deploy June8BitSwapBlocks"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "^0.68.0",
